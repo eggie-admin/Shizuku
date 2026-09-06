@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "hydra.samsung-sm-x400.shizuku",
+  "optional": true,
+  "role": "privilege-broker",
+  "preferredMode": "wireless-adb",
+  "secureFolderTarget": {
+    "developerOptionsRequired": true,
+    "wirelessDebuggingPreferred": true,
+    "rootAllowed": false,
+    "suiAllowed": false
+  },
+  "rootedLabTarget": {
+    "rootAllowed": true,
+    "suiAllowed": true,
+    "secureFolderTrusted": false
+  },
+  "hydra": {
+    "integrationRepository": "eggie-admin/hydra-shell-android",
+    "integrationBranch": "sm-x400-widget-shizuku",
+    "cathedralRepository": "eggie-admin/vue-headless-cms",
+    "cathedralBranch": "samsung-sm-x400-build-candidate",
+    "cathedralHead": "215310cff47d65311d6e7ff60eb63d6f176a444b"
+  },
+  "safety": {
+    "typedAllowlistedActionsOnly": true,
+    "noArbitraryShellFromModels": true,
+    "noSecretStorage": true,
+    "noPublicListener": true
+  }
+}
